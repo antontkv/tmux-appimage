@@ -10,6 +10,8 @@ Also, `create_appimage.sh` can create AppImage from the latest commit in master 
 
 Docker needs to be installed on the system.
 
+Script will download and run docker container, which will create an AppImage file in the current directory.
+
 Example:
 ```bash
 # Building 3.2a version
@@ -28,4 +30,3 @@ To understand how to create AppImage and for creating this project I looked up s
 - [Provide an AppImage generation script Pull Request for tmux](https://github.com/tmux/tmux/pull/2465) - @michaellee8 wanted to create an official AppImage for tmux. So that the AppImage file will be on the releases page in [tmux repository](https://github.com/tmux/tmux). He created [this script](https://github.com/michaellee8/tmux/blob/master/.github/genappimage.sh) for building the AppImage package.
 - [NeoVim script for creating AppImage](https://github.com/neovim/neovim/blob/master/scripts/genappimage.sh)
 - [Build instructions from tmux wiki](https://github.com/tmux/tmux/wiki/Installing#from-source-tarball)
-

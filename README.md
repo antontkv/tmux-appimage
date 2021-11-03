@@ -8,7 +8,7 @@ This is a Docker image and script for creating an AppImage package for Tmux.
 
 `create_appimage.sh` script can generate AppImage for any version of tmux (at least recent, I didn't test many old versions). The first argument to the script should be version number from the [release page of tmux](https://github.com/tmux/tmux/releases). The second argument is optional and needed for the release candidate version of tmux. Sometimes they have a number at the end, for example, 3.3-rc2. This second argument for such a number.
 
-Also, `create_appimage.sh` can create AppImage from the latest commit in master brunch of [tmux repository](https://github.com/tmux/tmux). For that, pass `master` as the first argument for the script.
+Also, `create_appimage.sh` can create AppImage from the latest commit in master branch of [tmux repository](https://github.com/tmux/tmux). For that, pass `master` as the first argument for the script.
 
 Docker needs to be installed on the system.
 

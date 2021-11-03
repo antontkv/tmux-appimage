@@ -17,7 +17,8 @@ if [ $TMUX_VERSION == "master" ]; then
 fi
 
 if
-    docker run -e TMUX_VERSION=$TMUX_VERSION -e TMUX_RC=$TMUX_RC --name tmuxappimage tmux-appimage:0.1
+    docker pull antontkv/tmux-appimage:latest
+    docker run -e TMUX_VERSION=$TMUX_VERSION -e TMUX_RC=$TMUX_RC --name tmuxappimage antontkv/tmux-appimage:latest
     docker cp tmuxappimage:/tmux-$TMUX_VER_FULL.appimage .
 then
     docker rm tmuxappimage
